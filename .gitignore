@@ -10,7 +10,7 @@ npm-debug.log*
 node_modules
 jspm_packages
 
-/*/dist/
+/dist/
 
 # too big files for commit
 /handover_01/res/diz/psd/BOU_J007_extra_pages_desktop.psd
