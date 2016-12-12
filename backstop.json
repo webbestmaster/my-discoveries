@@ -1,0 +1,193 @@
+{
+  "id": "Test for Styles",
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1280,
+      "height": 1024
+    },
+    {
+      "name": "tablet",
+      "width": 786,
+      "height": 1024
+    },
+    {
+      "name": "phone",
+      "width": 375,
+      "height": 667
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "header-mobile",
+      "url": "http://localhost:8080/pages/index.html",
+      "selectors": [
+        ".js-mobile-header"
+      ]
+    },
+    {
+      "label": "mobile-search",
+      "url": "http://localhost:8080/pages/index.html",
+      "delay": 1000,
+      "onReadyScript": "mobile-search.js",
+      "selectors": [
+        "body"
+      ]
+    },
+    {
+      "label": "mobile-menu-open",
+      "url": "http://localhost:8080/pages/index.html",
+      "delay": 1000,
+      "onReadyScript": "mobile-open-menu.js",
+      "selectors": [
+        ".js-mobile-header",
+        ".js-mobile-header-drop-down"
+      ]
+    },
+    {
+      "label": "mobile-menu-open-and-navigate",
+      "url": "http://localhost:8080/pages/index.html",
+      "onReadyScript": "mobile-menu-open-and-navigate.js",
+      "delay": 1000,
+      "selectors": [
+        ".js-mobile-header-drop-down"
+      ]
+    },
+    {
+      "label": "header-desktop",
+      "url": "http://localhost:8080/pages/index.html",
+      "selectors": [
+        ".header.desktop-only"
+      ]
+    },
+    {
+      "label": "header-desktop-dropdown",
+      "url": "http://localhost:8080/pages/index.html",
+      "delay": 1000,
+      "onReadyScript": "desktop-show-header-dropdown.js",
+      "selectors": [
+        ".header.desktop-only",
+        ".js-navigation-drop-down",
+        ".js-header-drop-down-background"
+      ]
+    },
+    {
+      "label": "desktop-breadcrumbs",
+      "url": "http://localhost:8080/pages/index.html",
+      "selectors": [
+        ".breadcrumbs"
+      ]
+    },
+    {
+      "label": "pagination",
+      "url": "http://localhost:8080/pages/index.html",
+      "selectors": [
+        ".pagination"
+      ]
+    },
+
+    {
+      "label": "footer",
+      "url": "http://localhost:8080/pages/index.html",
+      "selectors": [
+        ".footer"
+      ]
+    },
+    {
+      "label": "footer-link-hover",
+      "url": "http://localhost:8080/pages/index.html",
+      "onReadyScript": "footer-link-hover.js",
+      "selectors": [
+        ".footer__item"
+      ]
+    },
+
+    {
+      "label": "home-page",
+      "url": "http://localhost:8080/pages/home.html",
+      "delay": 1000,
+      "selectors": [
+        ".home-promo",
+        ".new-offer-promo",
+        ".proposal",
+        ".inspiration",
+        ".promo-text-block",
+        ".follow-the-journey"
+      ]
+    },
+
+    {
+      "label": "search-page",
+      "url": "http://localhost:8080/pages/search.html",
+      "selectors": [
+        ".search-page-main-search",
+        ".search-page-filter-wrapper",
+        ".search-page-cards-wrapper"
+      ]
+    },
+    {
+      "label": "hover-search-page-bucket-list",
+      "url": "http://localhost:8080/pages/search.html",
+      "onReadyScript": "hover-search-page-bucket-list.js",
+      "selectors": [
+        ".search-page-card__to-bucket-list"
+      ]
+    },
+    {
+      "label": "click-search-page-bucket-list",
+      "url": "http://localhost:8080/pages/search.html",
+      "onReadyScript": "click-search-page-bucket-list.js",
+      "delay": 1000,
+      "selectors": [
+        ".search-page-card__to-bucket-list"
+      ]
+    },
+    {
+      "label": "click-search-page-filter-label",
+      "url": "http://localhost:8080/pages/search.html",
+      "onReadyScript": "click-search-page-filter-label.js",
+      "delay": 1000,
+      "selectors": [
+        ".search-page-filter__label"
+      ]
+    },
+
+    {
+      "label": "hover-proposal-item",
+      "url": "http://localhost:8080/pages/home.html",
+      "onReadyScript": "hover-proposal-item.js",
+      "selectors": [
+        ".proposal-item"
+      ]
+    },
+    {
+      "label": "hover-follow-the-journey-item",
+      "url": "http://localhost:8080/pages/home.html",
+      "onReadyScript": "hover-follow-the-journey-item.js",
+      "selectors": [
+        ".follow-the-journey-item"
+      ]
+    },
+    {
+      "label": "follow-the-journey-item--type-1",
+      "url": "http://localhost:8080/pages/home.html",
+      "onReadyScript": "hover-follow-the-journey-item--type-1.js",
+      "selectors": [
+        ".follow-the-journey-item--type-1"
+      ]
+    }
+
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop/test/bitmaps_reference",
+    "casper_scripts": "backstop/test/casper_scripts",
+
+    "bitmaps_test": "backstop/backstop_data/bitmaps_test",
+    "html_report": "backstop/backstop_data/html_report",
+    "ci_report": "backstop/backstop_data/ci_report"
+  },
+  "casperFlags": [],
+  "engine": "phantomjs",
+  "report": ["browser"],
+  "debug": false
+}

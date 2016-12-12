@@ -1,0 +1,657 @@
+.search-page-main-search {
+  clear: both;
+  padding-top: 37px;
+  position: relative;
+  padding-bottom: 34px;
+}
+
+.search-page-main-search__search {
+  font-family: Larsseit-Medium, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  float: right;
+  border: none;
+  width: 872px;
+  height: 44px;
+  padding: 4px 15px 0;
+}
+
+.search-page-main-search__search-icon {
+  background-image: url(../i/search-icon.svg);
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  background-position: center center;
+  background-size: 22px 22px;
+  right: 2px;
+  background-repeat: no-repeat;
+}
+
+.search-page-cards-wrapper {
+  float: right;
+  width: 872px;
+}
+
+.search-page-card {
+  display: block;
+  height: 402px;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.search-page-card__info-side {
+  height: 100%;
+}
+
+.search-page-card__info-side--left {
+  float: left;
+  width: 261px;
+}
+
+.search-page-card__info-side--right {
+  float: left;
+  width: 342px;
+  padding: 104px 0 0 28px;
+}
+
+.search-page-card__category-item {
+  float: left;
+  width: 46px;
+  height: 46px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto 50%;
+  background-color: $turquoise;
+  background-image: url(../../i/weather/weather-cloud.svg);
+  border-radius: 50%;
+  margin-right: 7px;
+}
+
+.search-page-card__description {
+  clear: both;
+  font-family: Larsseit, sans-serif;
+  font-size: 16px;
+  padding-top: 20px;
+  line-height: 21px;
+  margin: 0;
+  padding-bottom: 50px;
+}
+
+.search-page-card__short-details-key {
+  float: left;
+  font-family: Larsseit-Bold, sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: $blue;
+  clear: left;
+  margin: 0 0 18px;
+}
+
+.search-page-card__short-details-value {
+  font-family: Larsseit, sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  float: right;
+  color: $blue;
+  clear: right;
+  margin: 0 0 18px;
+  width: 204px;
+}
+
+.search-page-card__short-details-icon {
+  height: 18px;
+  position: relative;
+  top: -3px;
+  margin-right: 5px;
+}
+
+.search-page-card__cost-side {
+  width: 269px;
+  float: right;
+  height: 100%;
+  background-color: $turquoise;
+  padding: 104px 0 0 18px;
+  position: relative;
+}
+
+.search-page-card__cost-from {
+  text-transform: uppercase;
+  font-family: Larsseit-Bold, sans-serif;
+  color: $blue;
+  font-size: 16px;
+  line-height: 16px;
+  margin: 0;
+  padding-bottom: 16px;
+}
+
+.search-page-card__cost-value {
+  color: $blue;
+  margin: 0;
+  font-family: Baghdad, serif;
+  font-size: 52px;
+  line-height: 52px;
+  letter-spacing: 4px;
+}
+
+.search-page-card__cost-currency {
+  position: relative;
+  top: -10px;
+}
+
+.search-page-card__cost-per-person {
+  color: $blue;
+  margin: 0;
+  font-family: Baghdad, serif;
+  font-size: 27px;
+  line-height: 27px;
+  letter-spacing: 2px;
+  padding-bottom: 26px;
+}
+
+.search-page-card__cost-details {
+  font-family: Larsseit-Bold, sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  margin: 0;
+  color: $orange;
+  text-transform: uppercase;
+  border: 2px solid $orange;
+  float: left;
+  padding: 11px 17px 8px;
+  letter-spacing: 1px;
+  &:hover {
+    color: #ffffff;
+    background-color: $orange;
+  }
+}
+
+.search-page-card__to-bucket-list {
+  cursor: pointer;
+  margin: 0;
+  color: $blue;
+  font-family: Larsseit-Bold, sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  display: block;
+  clear: both;
+  padding: 10px 10px 10px 37px;
+  background-repeat: no-repeat;
+  background-position: 2px 7px;
+  background-image: url(../../i/bucket-list/inactive.svg);
+  background-size: auto 57%;
+  position: absolute;
+  bottom: 17px;
+  &:hover {
+    background-image: url(../../i/bucket-list/hover.svg);
+    color: $orange;
+  }
+  &.search-page-card__to-bucket-list--liked {
+    background-image: url(../../i/bucket-list/liked.svg);
+    color: $orange;
+  }
+}
+
+.search-page-card__header {
+  margin: 0;
+  font-family: Bagnard, serif;
+  font-size: 34px;
+  line-height: 34px;
+  color: $orange;
+  padding: 27px 15px 7px 18px;
+}
+
+.search-page-card__country {
+  margin: 0;
+  font-family: Larsseit-Bold, sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: $blue;
+  text-transform: uppercase;
+  padding: 0 18px 21px 18px;
+  letter-spacing: 1px;
+}
+
+.search-page-card__image {
+  float: left;
+  width: 261px;
+  height: 162px;
+  padding: 0 0 0 18px;
+}
+
+.search-page-card__image-description {
+  display: block;
+  clear: left;
+  font-family: Larsseit, sans-serif;
+  font-size: 14px;
+  padding: 14px 0 0 20px;
+  margin: 0;
+}
+
+.search-page-card-places-visited__header {
+  color: $blue;
+  font-family: Larsseit-Bold, sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 15px 0 0 18px;
+  margin-bottom: 14px;
+}
+
+.search-page-card-places-visited__place {
+  background-color: $turquoise;
+  color: $blue;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: Larsseit, sans-serif;
+  float: left;
+  padding: 5px 7px 5px 8px;
+  margin-right: 7px;
+}
+
+.search-page-card-places-visited__place--first {
+  margin-left: 18px;
+}
+
+.search-page-filter-wrapper {
+  float: left;
+  padding-top: 11px;
+  width: 280px;
+}
+
+.search-page-filter__header {
+  color: $blue;
+  margin: 0;
+  font-family: Larsseit-Bold, sans-serif;
+  font-size: 26px;
+  line-height: 26px;
+  padding-bottom: 41px;
+}
+
+.search-page-filter__field-set {
+  display: block;
+  padding-bottom: 37px;
+  position: relative;
+}
+
+.search-page-filter__label {
+  margin: 0;
+  display: block;
+  clear: both;
+}
+
+.search-page-filter__sub-header {
+  font-family: Larsseit-Bold, sans-serif;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  padding-bottom: 16px;
+}
+
+.search-page-filter__checkbox {
+  display: none;
+  &:checked + .search-page-filter__custom-checkbox {
+    background-color: $blue;
+    border-color: $blue;
+    background-image: url(../../i/tick-small-white.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 14px 10px;
+  }
+}
+
+.search-page-filter__custom-checkbox {
+  float: left;
+  width: 23px;
+  height: 23px;
+  border: 1px solid $darkGray;
+  margin-right: 21px;
+  margin-left: 3px;
+  background-color: #ffffff;
+}
+
+.search-page-filter__label-text {
+  font-family: Larsseit, sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  margin: 0;
+  padding-bottom: 10px;
+  padding-top: 6px;
+  display: block;
+}
+
+.filter-result {
+  padding-bottom: 15px;
+}
+
+.filter-result__button {
+  color: $blue;
+  display: block;
+  border: 2px solid $blue;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: Larsseit-Bold, sans-serif;
+  padding: 11px 17px 8px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  &:hover {
+    background-color: $blue;
+    color: #ffffff;
+  }
+  margin: 0 15px;
+}
+
+.search-page-card__more-info {
+  display: block;
+  color: $orange;
+  font-family: Larsseit-Bold, sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  float: left;
+  text-transform: uppercase;
+  padding: 19px 20px 14px 17px;
+  letter-spacing: 1px;
+  background-repeat: no-repeat;
+  background-position: right 16px;
+  background-image: url(../../i/arrow/separator-down-ff4d1a.svg);
+  background-size: auto 17px;
+  cursor: pointer;
+  &.search-page-card__more-info--open {
+    background-image: url(../../i/arrow/separator-up-ff4d1a.svg);
+  }
+}
+
+.search-page-card--show-more-info {
+  .search-page-card__more-info {
+    background-image: url(../../i/arrow/separator-up-ff4d1a.svg);
+  }
+}
+
+.search-page-card__short-details-for-cost {
+  display: block;
+  color: $blue;
+  font-family: Larsseit-Bold, sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.search-page-card__short-details-for-cost-icon {
+  display: inline-block;
+  height: 19px;
+  position: relative;
+  top: -2px;
+  margin-right: 6px;
+}
+
+.search-page-card__short-details-for-cost-icon--nights {
+  margin-right: 2px;
+}
+
+.search-page-card__short-details-for-cost-text {
+  display: inline-block;
+  margin-right: 13px;
+}
+
+.search-page-card__cost-value-per-person {
+  float: left;
+  font-size: 16px;
+  line-height: 16px;
+  color: $blue;
+  margin: 0;
+  padding-top: 14px;
+}
+
+.search-page-card__cost-per-person-currency {
+  position: relative;
+}
+
+.search-page-filter__category-opener {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto 49%;
+  background-image: url(../../i/arrow/separator-up-3d3a38.svg);
+  right: 14px;
+  top: 6px;
+  cursor: pointer;
+}
+
+.search-page-filter__close-button {
+  position: absolute;
+  background-image: url(../../i/cross-close.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 21px 21px;
+  width: 32px;
+  height: 32px;
+  right: 14px;
+  top: 24px;
+  cursor: pointer;
+}
+
+.search-page-filter__apply-button__apply {
+  position: fixed;
+  height: 60px;
+  bottom: 60px;
+  width: 100%;
+  left: 0;
+  padding: 0 15px;
+  z-index: 1;
+}
+
+.search-page-filter__apply-button {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 18px;
+  line-height: 18px;
+  color: #ffffff;
+  font-family: Larsseit-Bold, sans-serif;
+  text-transform: uppercase;
+  background-color: $blue;
+  padding-top: 22px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: $desktopWideWidth) {
+
+  .search-page-card {
+    height: auto;
+  }
+
+  .search-page-main-search__search {
+    width: 100%;
+  }
+
+
+  .search-page-main-search {
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
+
+  .search-page-filter-wrapper {
+    display: none;
+  }
+
+  .search-page-cards-wrapper {
+    width: 100%;
+    float: none;
+  }
+
+  .search-page-card__info-side {
+    width: 100%;
+    float: none;
+  }
+
+  .search-page-card__header {
+    font-size: 30px;
+    line-height: 30px;
+    padding-left: 15px;
+  }
+
+  .search-page-card__country {
+    padding: 0 15px 15px;
+  }
+
+  .search-page-card__image {
+    width: 316px;
+    height: 209px;
+    padding: 0;
+    margin: 0 auto;
+    float: none;
+    display: block;
+  }
+
+  .search-page-card__cost-side {
+    float: none;
+    width: auto;
+    clear: both;
+    padding: 24px 15px 15px;
+  }
+
+  .search-page-card__cost-value {
+    font-size: 36px;
+    line-height: 36px;
+    float: left;
+  }
+
+  .search-page-card__cost-currency {
+    top: -7px;
+  }
+
+  .search-page-card__cost-per-person {
+    font-size: 16px;
+    line-height: 16px;
+    padding-top: 14px;
+    float: left;
+    padding-left: 8px;
+    padding-bottom: 23px;
+    letter-spacing: 1px;
+  }
+
+  .search-page-card__short-details-for-cost {
+    clear: both;
+    margin: 0;
+    padding-bottom: 26px;
+  }
+
+  .search-page-card__cost-details {
+    clear: both;
+    display: block;
+    float: none;
+    text-align: center;
+    margin-bottom: 14px;
+  }
+
+  .search-page-card__to-bucket-list {
+    font-size: 0;
+    right: 5px;
+    top: 17px;
+    position: absolute;
+    background-size: auto 70%;
+    width: 30px;
+    height: 30px;
+    background-position: center center;
+  }
+
+  .search-page-card__image-description,
+  .search-page-card-places-visited__header,
+  .search-page-card-places-visited__place,
+  .search-page-card__info-side--right {
+    display: none;
+  }
+
+  .search-page-card__info-side--right {
+    padding: 19px 14px 0;
+    clear: both;
+  }
+
+  .search-page-card__description {
+    padding: 17px 0 15px;
+  }
+
+  .search-page-card-places-visited__header {
+    clear: both;
+    float: none;
+    padding-top: 3px;
+  }
+
+  .search-page-card__short-details-value {
+    width: auto;
+  }
+
+  .search-page-card--show-more-info {
+    //.search-page-card__image-description,
+    .search-page-card-places-visited__header,
+    .search-page-card-places-visited__place,
+    .search-page-card__info-side--right {
+      display: block;
+    }
+  }
+
+  .search-page-filter__header {
+    text-align: center;
+    padding: 30px 15px 9px;
+  }
+
+  .search-page-filter__sub-header {
+    padding-bottom: 0;
+  }
+
+  .search-page-filter__field-set {
+    padding: 17px 12px 12px;
+    border-bottom: 1px solid #ffffff;
+    .search-page-filter__label {
+      display: none;
+    }
+  }
+
+  .search-page-filter__field-set--mobile-opened {
+    padding-bottom: 6px;
+    .search-page-filter__category-opener {
+      background-image: url(../../i/arrow/separator-down-3d3a38.svg);
+    }
+    .search-page-filter__sub-header {
+      padding-bottom: 12px;
+    }
+    .search-page-filter__label {
+      display: block;
+    }
+  }
+
+  .modal-filter-popup-wrapper {
+    padding-bottom: 100px;
+  }
+
+}
+
+@media only screen and (max-width: $tabletWidth) {
+}
+
+@media only screen and (max-width: $phoneWidth) {
+
+}
+
+.os-windows {
+  .search-page-main-search__search {
+    display: block;
+    padding-top: 0;
+    padding-bottom: 1px;
+  }
+  .search-page-card__cost-currency {
+    top: 0;
+  }
+  &.browser-ie {
+    .search-page-card__to-bucket-list {
+      background-position-x: -20px;
+    }
+  }
+}
+
+
+

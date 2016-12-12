@@ -1,0 +1,59 @@
+/* related-product-adventure */
+
+.related-product-adventure {
+    background-color: $lightGray;
+    padding: 69px 0 60px;
+}
+
+.related-product-adventure__header {
+    margin-bottom: 35px;
+}
+
+.related-product-adventure-card {
+    height: 320px;
+    overflow: hidden;
+
+    background-color: $turquoise;
+}
+
+.related-product-adventure-card__city-photo {
+    height: 160px;
+    width: 100%;
+}
+
+.related-product-adventure-card__title {
+    margin: 0;
+    padding: 23px 28px 10px;
+    line-height: 25px;
+}
+
+.related-product-adventure-card__link {
+    font-size: 21px;
+    font-family: Bagnard, serif;
+    border-bottom: 2px solid transparent;
+    color: $blue;
+    &:hover {
+        color: $blue;
+        border-bottom-color: $blue;
+    }
+}
+
+.related-product-adventure-card__content {
+    margin: 0;
+    padding: 0 26px;
+    font-size: 16px;
+
+    color: $textColor;
+}
+
+@media only screen and (max-width: $desktopWideWidth) {
+
+}
+
+@media only screen and (max-width: $tabletWidth) {
+
+}
+
+@media only screen and (max-width: $phoneWidth) {
+
+}

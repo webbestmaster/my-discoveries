@@ -1,0 +1,44 @@
+/* library and global */
+@import 'font-face.scss';
+@import '../lib/reset.css';
+@import '../lib/bootstrap.css';
+@import '../lib/swiper.css';
+
+@import 'vars.scss';
+@import 'global-styles.scss';
+
+/* chunks for "every-page" items */
+@import '../chunks/header.scss';
+@import '../chunks/breadcrumbs.scss';
+@import '../chunks/footer.scss';
+@import '../chunks/navigation-drop-down.scss';
+@import '../chunks/pagination.scss';
+
+/* services */
+// import '../scroll-area.scss';
+// import '../horizontal-slider.scss';
+@import '../chunks/swiping.scss';
+@import '../chunks/modal-filter.scss';
+
+
+/* chunks all-stories */
+@import '../chunks/all-stories/header.scss';
+@import '../chunks/all-stories/call-to-action-top.scss';
+@import '../chunks/all-stories/best-of-adveture.scss';
+@import '../chunks/all-stories/related-product-adventure.scss';
+@import '../chunks/all-stories/interest-related-adventure.scss';
+@import '../chunks/all-stories/call-to-action-bottom.scss';
+
+/* log-in */
+@import '../chunks/log-in/log-in.scss';
+
+/* chunks home */
+@import '../chunks/home/promo.scss';
+@import '../chunks/home/new-offer-promo.scss';
+@import '../chunks/home/proposal.scss';
+@import '../chunks/home/inspiration.scss';
+@import '../chunks/home/promo-text-block.scss';
+@import '../chunks/home/follow-the-journey.scss';
+
+/* chunks search */
+@import '../chunks/search/search.scss';

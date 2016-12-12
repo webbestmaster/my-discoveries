@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>All stories</title>
+
+    {{ var dot = it.dot, chunks = it.chunks; }}
+    {{= dot.template(chunks['head.html'])({}) }}
+
+</head>
+<body>
+
+{{= it.chunks['header.html'] }}
+{{= it.chunks['breadcrumbs.html'] }}
+
+<!-- BEGIN - adventure-header -->
+
+<section class="adventure-header">
+    <img src="../images/adventure-header-bg.png" class="adventure-header__background" alt>
+    <h1 class="adventure-header__title text-center">Adventure Travel</h1>
+    <p class="adventure-header__content text-center">Ride rapids, swim with sharks, and trek to distant peaks</p>
+</section>
+
+<!-- END - adventure-header -->
+
+<!-- BEGIN - call-to-action-top -->
+
+<section class="call-to-action-top text-center">
+    <div class="container call-to-action-top__container">
+        <div class="row">
+            <div class="col-sm-12 col-xs-12">
+                <p class="call-to-action-top__text">Lorem ipsum dolor sit amet, et nec solum everti comprehensam.</p>
+                <a href="#" class="call-to-action-top__btn">share a story</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- END - call-to-action-top -->
+
+<!-- BEGIN - best-of-adventure -->
+
+<section class="best-of-adventure">
+    <div class="container width-limiter">
+        <div class="row best-of-adventure__header">
+            <div class="col-sm-12 col-md-12 col-xs-12">
+                <h2 class="adventure-block__title">Best of adventure travel</h2>
+                <p class="adventure-see__link-wrapper">
+                    <a href="#" class="adventure-see__link hidden-xs">see all</a>
+                </p>
+            </div>
+        </div>
+        <div class="row best-of-adventure__content">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <div class="best-of-adventure-card adventure-thumbnail">
+                    <img src="../images/adventure-card-best-of-road.png" class="best-of-adventure-card__road-photo" alt>
+                    <h3 class="best-of-adventure-card__title"><a href="#" class="best-of-adventure-card__link">Dubrovnik to Ohrid: cycling into the heart...</a></h3>
+                    <p class="best-of-adventure-card__content">Cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum...</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <div class="best-of-adventure-card adventure-thumbnail">
+                    <img src="../images/adventure-card-best-of-road.png" class="best-of-adventure-card__road-photo" alt>
+                    <h3 class="best-of-adventure-card__title"><a href="#" class="best-of-adventure-card__link">Dubrovnik to Ohrid: cycling into the heart...</a></h3>
+                    <p class="best-of-adventure-card__content">Cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum...</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <div class="best-of-adventure-card adventure-thumbnail">
+                    <img src="../images/adventure-card-best-of-road.png" class="best-of-adventure-card__road-photo" alt>
+                    <h3 class="best-of-adventure-card__title"><a href="#" class="best-of-adventure-card__link">Dubrovnik to Ohrid: cycling into the heart...</a></h3>
+                    <p class="best-of-adventure-card__content">Cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- END - best-of-adventure -->
+
+<!-- BEGIN - related-product-adventure -->
+
+<section class="related-product-adventure">
+    <div class="container width-limiter">
+        <div class="row related-product-adventure__header">
+            <div class="col-sm-12 col-md-12 col-xs-12">
+                <h2 class="adventure-block__title">Related products for adventure travel</h2>
+                <p class="adventure-see__link-wrapper">
+                    <a href="#" class="adventure-see__link hidden-xs">see all</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row related-product-adventure__content">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="related-product-adventure-card adventure-thumbnail">
+                    <img src="../images/related-product-adventure-city.png" class="related-product-adventure-card__city-photo" alt>
+                    <h3 class="related-product-adventure-card__title"><a href="#" class="related-product-adventure-card__link">Bhutan travel guide</a></h3>
+                    <p class="related-product-adventure-card__content">Cupidatat non proident, sunt in culpa qui officia deserunt...</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="related-product-adventure-card adventure-thumbnail">
+                    <img src="../images/related-product-adventure-city.png" class="related-product-adventure-card__city-photo" alt>
+                    <h3 class="related-product-adventure-card__title"><a href="#" class="related-product-adventure-card__link">Great Adventures (Hardback pictorial)</a></h3>
+                    <p class="related-product-adventure-card__content">Cupidatat non proident, sunt in culpa qui officia deserunt...</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="related-product-adventure-card adventure-thumbnail">
+                    <img src="../images/related-product-adventure-city.png" class="related-product-adventure-card__city-photo" alt>
+                    <h3 class="related-product-adventure-card__title"><a href="#" class="related-product-adventure-card__link">Bhutan travel guide</a></h3>
+                    <p class="related-product-adventure-card__content">Cupidatat non proident, sunt in culpa qui officia deserunt...</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="related-product-adventure-card adventure-thumbnail">
+                    <img src="../images/related-product-adventure-city.png" class="related-product-adventure-card__city-photo" alt>
+                    <h3 class="related-product-adventure-card__title"><a href="#" class="related-product-adventure-card__link">Great Adventures (Hardback pictorial)</a></h3>
+                    <p class="related-product-adventure-card__content">Cupidatat non proident, sunt in culpa qui officia deserunt...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- END - related-product-adventure -->
+
+<!-- BEGIN - interest-related-adventure -->
+
+<section class="interest-related-adventure">
+    <div class="container width-limiter">
+        <div class="row interest-related-adventure__header">
+            <div class="col-sm-12 col-md-12">
+                <h2 class="adventure-block__title">Interests related to adventure travel</h2>
+            </div>
+        </div>
+        <div class="row interest-related-adventure__content">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="interest-related-adventure-card adventure-thumbnail">
+                    <img src="../images/interest-related-adventure-people.png" class="interest-related-adventure-card__people-photo" alt>
+                    <h3 class="interest-related-adventure-card__title text-center">Budget travel</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="interest-related-adventure-card adventure-thumbnail">
+                    <img src="../images/interest-related-adventure-people.png" class="interest-related-adventure-card__people-photo" alt>
+                    <h3 class="interest-related-adventure-card__title text-center">Festivals & Events</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- END - interest-related-adventure -->
+
+<!-- BEGIN - call-to-action-bottom -->
+
+<section class="call-to-action-bottom text-center">
+    <img src="../images/call-to-action-bottom-banner.png" class="call-to-action-bottom__banner-photo" alt>
+    <div class="container width-limiter">
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <p class="call-to-action-bottom__text">Lorem ipsum dolor sit amet, et nec solum everti comprehensam.</p>
+                <a href="#" class="call-to-action-bottom__btn">share a story</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- END - call-to-action-bottom -->
+
+{{= it.chunks['footer.html'] }}
+
+</body>
+</html>

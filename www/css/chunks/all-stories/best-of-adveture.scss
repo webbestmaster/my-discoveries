@@ -1,0 +1,61 @@
+/* best-of-adventure */
+
+.best-of-adventure {
+    padding: 73px 0 62px;
+}
+
+.best-of-adventure__header {
+    margin-bottom: 31px;
+}
+
+.best-of-adventure-card {
+    height: 380px;
+    background-color: $lightGray;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.best-of-adventure-card__title {
+    margin: 0;
+    padding: 25px 0 10px;
+    line-height: 30px;
+}
+
+.best-of-adventure-card__road-photo {
+    height: 192px;
+    width: 100%;
+}
+
+.best-of-adventure-card__link {
+    font-family: Bagnard, serif;
+    font-size: 26px;
+    border-bottom: 2px solid transparent;
+    color: $blue;
+    &:hover {
+        color: $blue;
+        border-bottom-color: $blue;
+    }
+}
+
+.best-of-adventure-card__content {
+    margin: 0;
+    font-size: 16px;
+
+    color: $textColor;
+}
+
+@media only screen and (max-width: $desktopWideWidth) {
+
+    .best-of-adventure-card__link {
+        font-size: 21px;
+    }
+
+}
+
+@media only screen and (max-width: $tabletWidth) {
+
+}
+
+@media only screen and (max-width: $phoneWidth) {
+
+}

@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>home</title>
+
+    {{ var dot = it.dot, chunks = it.chunks; }}
+    {{= dot.template(chunks['head.html'])({}) }}
+
+</head>
+<body>
+
+{{= it.chunks['header.html'] }}
+
+<!--<div style="display: none">-->
+{{ /* it.chunks['breadcrumbs.html'] */ }}
+
+<!-- BEGIN - home promo -->
+<div class="home-promo">
+    <img class="home-promo__image" src="../images/home-promo-image.jpg" alt="">
+    <h1 class="home-promo__header">Travel experiences<br/>with you in mind</h1>
+
+    <div class="home-promo__search-wrapper">
+        <input placeholder="Search" class="home-promo__search" type="text"/>
+        <span class="home-promo__search-icon"></span>
+    </div>
+
+</div>
+<!-- END - home promo -->
+
+<!-- BEGIN - new offers promo -->
+<div class="new-offer-promo">
+
+    <div class="width-limiter width-limiter--wide clear-self">
+
+        <div class="new-offer-promo-item">
+            <h3 class="new-offer-promo-item__header">New Kimberley Cruise</h3>
+            <img src="http://lorempixel.com/370/161/nature?1" alt="" class="new-offer-promo-item__image">
+            <p class="new-offer-promo-item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <a href="#" class="new-offer-promo-item__link">new offers</a>
+        </div>
+
+        <div class="new-offer-promo-item">
+            <h3 class="new-offer-promo-item__header">I'm the advertisement</h3>
+            <img src="http://lorempixel.com/370/310/business" alt="" class="new-offer-promo-item__ads">
+        </div>
+
+        <div class="new-offer-promo-item">
+            <h3 class="new-offer-promo-item__header">New Kimberley Cruise</h3>
+            <img src="http://lorempixel.com/370/161/nature?3" alt="" class="new-offer-promo-item__image">
+            <p class="new-offer-promo-item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <a href="#" class="new-offer-promo-item__link">new offers</a>
+        </div>
+
+    </div>
+
+</div>
+<!-- END - new offers promo -->
+
+<!-- BEGIN - proposal -->
+<div class="proposal width-limiter clear-self">
+    <h3 class="proposal__header">Holiday styles to suit you</h3>
+    <p class="proposal__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <div class="proposals-wrapper clear-self">
+        <div class="proposal-item proposal-item_type-1">
+
+            <img src="http://lorempixel.com/340/530/nature?4" class="proposal-item__image" alt="">
+
+            <div class="proposal-item__description">
+                <h4 class="proposal-item__header">Ocean Cruises</h4>
+                <p class="proposal-item__paragraph">Aboard Saga Sapphire<br/>& Saga Pearl II</p>
+            </div>
+
+            <p class="proposal-item__link-wrapper">
+                <a class="proposal-item__link" href="#">see all</a>
+            </p>
+
+        </div>
+
+        <div class="proposal-item proposal-item_type-2">
+
+            <img src="http://lorempixel.com/370/260/nature?4" class="proposal-item__image" alt="">
+
+            <div class="proposal-item__description">
+                <h4 class="proposal-item__header">Join a small group for a big adventure</h4>
+                <p class="proposal-item__paragraph">Travel with 14 people or less</p>
+            </div>
+
+            <p class="proposal-item__link-wrapper proposal-item__link-wrapper--lower">
+                <a class="proposal-item__link" href="#">see all</a>
+            </p>
+
+
+        </div>
+
+        <div class="proposal-item proposal-item_type-3">
+
+            <img src="http://lorempixel.com/370/260/nature?5" class="proposal-item__image" alt="">
+
+            <div class="proposal-item__description">
+                <h4 class="proposal-item__header">Join a small group for a big adventure</h4>
+                <p class="proposal-item__paragraph">Travel with 14 people or less</p>
+            </div>
+
+            <p class="proposal-item__link-wrapper proposal-item__link-wrapper--lower">
+                <a class="proposal-item__link" href="#">see all</a>
+            </p>
+
+        </div>
+
+        <div class="proposal-item proposal-item_type-4">
+
+            <img src="http://lorempixel.com/770/260/nature?5" class="proposal-item__image" alt="">
+
+            <div class="proposal-item__description">
+                <h4 class="proposal-item__header">Escorted Tours</h4>
+                <p class="proposal-item__paragraph">Sightseeing with an expert on hand</p>
+            </div>
+
+            <p class="proposal-item__link-wrapper">
+                <a class="proposal-item__link" href="#">see all</a>
+            </p>
+
+        </div>
+
+    </div>
+
+    <p class="see-more">
+        <a class="see-more__link" href="#">see more</a>
+    </p>
+
+</div>
+
+<!-- END - proposal -->
+
+<!-- BEGIN - inspiration -->
+
+<div class="inspiration">
+
+    <h3 class="proposal__header">Find your inspiration</h3>
+
+    <div class="inspirations-wrapper width-limiter width-limiter--wide clear-self
+            swiper-container js-horizontal-scroll--centered-slides
+        ">
+
+        <div class="swiper-wrapper">
+
+            <div class="inspiration-item swiper-slide">
+                <img class="inspiration-item__image" src="http://lorempixel.com/340/190/nature?6" alt="">
+                <h4 class="inspiration-item__header">Eat and drink your way around Venice</h4>
+                <a class="inspiration-item__link" href="#">read more</a>
+                <span class="inspiration-item__mark">Featured Article</span>
+            </div>
+
+            <div class="inspiration-item swiper-slide">
+                <img class="inspiration-item__image" src="http://lorempixel.com/340/190/nature?7" alt="">
+                <h4 class="inspiration-item__header">Our top 15 islands</h4>
+                <a class="inspiration-item__link" href="#">read more</a>
+                <span class="inspiration-item__mark">Featured Article</span>
+            </div>
+
+            <div class="inspiration-item swiper-slide">
+                <img class="inspiration-item__image" src="http://lorempixel.com/340/190/nature?8" alt="">
+                <h4 class="inspiration-item__header">24 hours in Hong Kong</h4>
+                <a class="inspiration-item__link" href="#">read more</a>
+                <span class="inspiration-item__mark">Featured Article</span>
+            </div>
+
+        </div>
+
+        <div class="swiper-scrollbar"></div>
+
+    </div>
+
+    <p class="see-more">
+        <a class="see-more__link" href="#">see more</a>
+    </p>
+
+</div>
+<!-- END - inspiration -->
+
+<!-- BEGIN - promo-text-block -->
+<div class="promo-text-block">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi, aspernatur corporis esse est eveniet ex fugit illo impedit laboriosam magni minima nihil numquam praesentium quasi quisquam rem sapiente voluptatem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolores ipsam nihil sed vero. Alias exercitationem illo incidunt necessitatibus nisi non perspiciatis placeat praesentium.
+</div>
+<!-- END - promo-text-block -->
+
+<!-- BEGIN - follow-the-journey -->
+<div class="follow-the-journey width-limiter width-limiter--wide clear-self">
+
+    <h3 class="follow-the-journey__header">Follow the journey</h3>
+
+    <div class="follow-the-journey__image-list clear-self">
+
+        <a href="#" class="follow-the-journey-item">
+            <img class="follow-the-journey-item__image" src="http://lorempixel.com/170/170/people?1" alt="">
+        </a>
+        <a href="#" class="follow-the-journey-item follow-the-journey-item--type-1">
+            <img class="follow-the-journey-item__image follow-the-journey-item__image--type-1" src="http://lorempixel.com/146/114/people" alt="">
+            <p class="follow-the-journey-item__paragraph follow-the-journey-item__paragraph--type-1">See Kolkata</p>
+        </a>
+        <a href="#" class="follow-the-journey-item">
+            <img class="follow-the-journey-item__image" src="http://lorempixel.com/170/170/people?2" alt="">
+        </a>
+        <a href="#" class="follow-the-journey-item">
+            <img class="follow-the-journey-item__image" src="http://lorempixel.com/170/170/people?3" alt="">
+        </a>
+        <a href="#" class="follow-the-journey-item">
+            <img class="follow-the-journey-item__image" src="http://lorempixel.com/170/170/people?4" alt="">
+        </a>
+        <a href="#" class="follow-the-journey-item">
+            <img class="follow-the-journey-item__image" src="http://lorempixel.com/170/170/people?5" alt="">
+        </a>
+
+    </div>
+
+</div>
+<!-- END - follow-the-journey -->
+
+{{= it.chunks['footer.html'] }}
+
+<!--</div>-->
+
+</body>
+</html>

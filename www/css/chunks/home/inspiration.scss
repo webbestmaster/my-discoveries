@@ -1,0 +1,112 @@
+.inspiration {
+    background-color: $lightGray;
+    padding: 92px 0 58px;
+}
+
+.inspirations-wrapper {
+    padding: 47px 0 28px;
+}
+
+.inspiration-item {
+    width: 370px;
+    height: 380px;
+    float: left;
+    margin: 15px;
+    position: relative;
+    @include prefix-property(background-image, linear-gradient(top, $orange 0, $orange 190px, #ffffff 190px))
+}
+
+.inspiration-item__image {
+    top: 15px;
+    left: 15px;
+    position: absolute;
+    z-index: 0;
+    width: 340px;
+    height: 190px;
+}
+
+.inspiration-item__header {
+    font-size: 28px;
+    margin: 0;
+    padding: 231px 28px 10px;
+    color: $blue;
+    font-family: Bagnard, serif;
+}
+
+.inspiration-item__link {
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 28px;
+    bottom: 29px;
+    border: 2px solid $orange;
+    padding: 11px 15px 9px;
+    color: $orange;
+    font-family: Larsseit-Bold, sans-serif;
+    &:hover {
+        color: #ffffff;
+        background-color: $orange;
+    }
+}
+
+.inspiration-item__mark {
+    font-size: 16px;
+    line-height: 16px;
+    position: absolute;
+    left: 0;
+    top: 36px;
+    background-color: $blue;
+    color: $markTextColor;
+    padding: 16px 21px 12px;
+    font-family: Larsseit-Bold, sans-serif;
+    letter-spacing: 1px;
+}
+
+@media only screen and (max-width: $desktopWideWidth) {
+
+    .inspiration {
+        padding: 39px 0 20px;
+    }
+
+    .inspirations-wrapper {
+        padding: 13px 0 28px;
+    }
+
+    .inspiration-item {
+        width: 283px;
+        height: 339px;
+        margin-top: 0;
+        margin-bottom: 0;
+        @include prefix-property(background-image, linear-gradient(top, $orange 0, $orange 171px, #ffffff 171px))
+    }
+
+    .inspiration-item__image {
+        height: 171px;
+        width: 253px;
+    }
+
+    .inspiration-item__mark {
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+
+    .inspiration-item__header {
+        padding: 208px 15px 10px;
+        font-size: 24px;
+    }
+
+    .inspiration-item__link {
+        left: 15px;
+        bottom: 20px;
+    }
+
+}
+
+@media only screen and (max-width: $tabletWidth) {
+
+}
+
+@media only screen and (max-width: $phoneWidth) {
+
+}

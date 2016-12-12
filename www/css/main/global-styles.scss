@@ -1,0 +1,109 @@
+body {
+    /*
+    FIXME: remove this before realise
+    prevent right "jumping" from perfect pixel
+     */
+    overflow-y: scroll;
+    font-family: Larsseit-Light, sans-serif;
+}
+
+.bgc-black {
+    background-color: #000000;
+}
+
+.bgc-white {
+    background-color: #ffffff;
+}
+
+.bgc-light-gray {
+    background-color: $lightGray;
+}
+
+.bgc-dark-gray {
+    background-color: $darkGray;
+}
+
+.bgc-turquoise {
+    background-color: $turquoise;
+}
+
+.bgc-orange {
+    background-color: $orange;
+}
+
+.bgc-blue {
+    background-color: $blue;
+}
+
+.width-limiter {
+    margin: 0 auto;
+    width: 1200px;
+    padding: 0 15px;
+}
+
+.width-limiter--wide {
+    padding: 0;
+}
+
+.clear-self:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+a, a:hover {
+    text-decoration: none;
+}
+
+input[type="text"] {
+    color: $textColor;
+    &:focus {
+        outline: 2px solid $blue;
+    }
+}
+
+// improvement for IE 10-11
+input[type="text"]::-ms-clear {
+    display: none;
+}
+
+.mobile-only {
+    display: none !important;
+}
+
+.desktop-only {
+    display: block !important;
+}
+
+.hidden {
+    display: none !important;
+    &.mobile-only,
+    &.desktop-only {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: $desktopWideWidth) {
+
+    .mobile-only {
+        display: block !important;
+    }
+
+    .desktop-only {
+        display: none !important;
+    }
+
+    .hidden {
+        display: none !important;
+        &.mobile-only,
+        &.desktop-only {
+            display: none !important;
+        }
+    }
+
+    .width-limiter {
+        width: auto;
+    }
+
+}

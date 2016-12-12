@@ -1,0 +1,105 @@
+/* adventure-header */
+
+.adventure-header {
+    clear: both;
+    height: 556px;
+    position: relative;
+    overflow: hidden;
+}
+
+.adventure-header__background {
+    position: absolute;
+    margin-left: 50%;
+    @include prefix(transform, translate(-50%, -31%));
+    z-index: -1;
+}
+
+.adventure-header__title {
+    font-family: Bagnard, serif;
+    font-size: 80px;
+    padding-top: 206px;
+
+    color: #fff;
+}
+
+.adventure-header__content {
+    font-family: Larsseit-Light, serif;
+    font-size: 18px;
+
+    color: #fff;
+}
+
+.adventure-block__title {
+    float: left;
+    margin: 0;
+    font-family: Larsseit-Bold, serif;
+    font-size: 26px;
+
+    color: $blue;
+}
+
+.adventure-see__link-wrapper {
+    margin: 0;
+    position: absolute;
+    margin-left: -61px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.adventure-see__link {
+    float: right;
+    color: $orange;
+    font-size: 16px;
+    line-height: 16px;
+    display: inline-block;
+    text-transform: uppercase;
+    position: relative;
+    font-family: Larsseit-Bold, sans-serif;
+    border-bottom: 2px solid transparent;
+    &:after {
+        position: absolute;
+        bottom: 2px;
+        background-position: right 0;
+        width: 46px;
+        height: 100%;
+        content: '';
+        background-image: url(../i/arrow/big-right-ff4d1a.svg);
+        background-repeat: no-repeat;
+    }
+    &:hover {
+        color: $orange;
+        border-bottom-color: $orange;
+    }
+}
+
+.adventure-thumbnail {
+    display: block;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: $desktopWideWidth) {
+
+
+
+}
+
+@media only screen and (max-width: $tabletWidth) {
+
+    .adventure-header__title {
+        font-size: 36px;
+    }
+
+    .adventure-header__content {
+        font-size: 14px;
+    }
+
+    .adventure-block__title {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: $phoneWidth) {
+
+}

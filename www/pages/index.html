@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>index</title>
+
+    {{ var dot = it.dot, chunks = it.chunks; }}
+    {{= dot.template(chunks['head.html'])({}) }}
+
+</head>
+<body>
+
+{{= it.chunks['header.html'] }}
+{{= it.chunks['breadcrumbs.html'] }}
+
+<br>
+<br>
+<br>
+<br>
+<h1>I'm just a example html file, thanks for your time to open me ;)</h1>
+<br>
+<br>
+<br>
+<br>
+
+<div class="width-limiter pagination">
+    <a class="pagination__link-left" href="#"></a>
+    <a class="pagination__link" href="#">1</a>
+    <a class="pagination__link" href="#">2</a>
+    <a class="pagination__link" href="#">3</a>
+    <a class="pagination__link-right" href="#"></a>
+</div>
+
+{{= it.chunks['footer.html'] }}
+
+</body>
+</html>

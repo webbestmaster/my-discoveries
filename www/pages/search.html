@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Search</title>
+
+    {{ var dot = it.dot, chunks = it.chunks; }}
+    {{= dot.template(chunks['head.html'])({}) }}
+
+</head>
+<body>
+
+{{= it.chunks['header.html'] }}
+{{= it.chunks['breadcrumbs.html'] }}
+
+<div class="bgc-light-gray">
+
+    <div class="width-limiter">
+
+        <div class="search-page-main-search clear-self">
+            <input class="search-page-main-search__search" type="text" placeholder="Australia Zoo">
+            <span class="search-page-main-search__search-icon"></span>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="bgc-light-gray mobile-only filter-result">
+    <a class="filter-result__button js-show-hide-filter-result-button" href="#">Filter your result</a>
+</div>
+
+<div class="bgc-light-gray clear-self">
+
+    <div class="width-limiter">
+
+        <div class="search-page-filter-wrapper js-search-page-filter-wrapper clear-self">
+            <div class="js-modal-filter-popup-wrapper modal-filter-popup-wrapper">
+
+                <span class="search-page-filter__close-button mobile-only js-show-hide-filter-result-button"></span>
+                <div class="search-page-filter__apply-button__apply mobile-only">
+                    <span class="search-page-filter__apply-button js-show-hide-filter-result-button">Apply</span>
+                </div>
+
+                <h3 class="search-page-filter__header">Filter</h3>
+
+                {{ var i = 2; }}
+                {{ while (i--) { }}
+
+                <div class="search-page-filter__field-set clear-self">
+                    <span class="search-page-filter__category-opener js-filter-category-opener mobile-only"></span>
+                    <h4 class="search-page-filter__sub-header">
+                        Category
+                    </h4>
+                    <label class="search-page-filter__label">
+                        <input type="checkbox" class="search-page-filter__checkbox">
+                        <span class="search-page-filter__custom-checkbox"></span>
+                        <span class="search-page-filter__label-text">Some text 1</span>
+                    </label>
+                    <label class="search-page-filter__label">
+                        <input type="checkbox" class="search-page-filter__checkbox">
+                        <span class="search-page-filter__custom-checkbox"></span>
+                        <span class="search-page-filter__label-text">Some text 1</span>
+                    </label>
+                    <label class="search-page-filter__label">
+                        <input type="checkbox" checked class="search-page-filter__checkbox">
+                        <span class="search-page-filter__custom-checkbox"></span>
+                        <span class="search-page-filter__label-text">Some text 1</span>
+                    </label>
+                    <label class="search-page-filter__label">
+                        <input type="checkbox" checked class="search-page-filter__checkbox">
+                        <span class="search-page-filter__custom-checkbox"></span>
+                        <span class="search-page-filter__label-text">Some text 1</span>
+                    </label>
+                </div>
+
+                <div class="search-page-filter__field-set clear-self">
+                    <span class="search-page-filter__category-opener js-filter-category-opener mobile-only"></span>
+                    <h4 class="search-page-filter__sub-header">
+                        One more category
+                    </h4>
+                    <label class="search-page-filter__label">
+                        <input type="checkbox" class="search-page-filter__checkbox">
+                        <span class="search-page-filter__custom-checkbox"></span>
+                        <span class="search-page-filter__label-text">Some text 2</span>
+                    </label>
+                    <label class="search-page-filter__label">
+                        <input type="checkbox" class="search-page-filter__checkbox">
+                        <span class="search-page-filter__custom-checkbox"></span>
+                        <span class="search-page-filter__label-text">Some text 2</span>
+                    </label>
+                    <label class="search-page-filter__label">
+                        <input type="checkbox" class="search-page-filter__checkbox">
+                        <span class="search-page-filter__custom-checkbox"></span>
+                        <span class="search-page-filter__label-text">Some text 2</span>
+                    </label>
+                    <label class="search-page-filter__label">
+                        <input type="checkbox" class="search-page-filter__checkbox">
+                        <span class="search-page-filter__custom-checkbox"></span>
+                        <span class="search-page-filter__label-text">Some text 2</span>
+                    </label>
+                </div>
+
+                {{ }; }}
+
+            </div>
+
+        </div>
+
+        <div class="search-page-cards-wrapper clear-self">
+
+            {{ var i = 4; }}
+            {{ while ( i-- ) { }}
+
+            <div class="search-page-card clear-self">
+
+                <div class="search-page-card__info-side search-page-card__info-side--left">
+                    <h3 class="search-page-card__header">Australia Zoo</h3>
+                    <p class="search-page-card__country">Australia</p>
+                    <img src="http://lorempixel.com/243/162/animals?1" class="search-page-card__image" alt="">
+                    <span class="search-page-card__more-info mobile-only js-show-more-card-info">more info</span>
+                    <p class="search-page-card__image-description">Lorem ipsum dolor sit amet</p>
+                    <h4 class="search-page-card-places-visited__header">Places Visited</h4>
+                    <span class="search-page-card-places-visited__place search-page-card-places-visited__place--first">Australia</span>
+                    <span class="search-page-card-places-visited__place">Sydney</span>
+                </div>
+
+                <div class="search-page-card__info-side search-page-card__info-side--right">
+                    <span class="search-page-card__category-item"></span>
+                    <span class="search-page-card__category-item"></span>
+
+                    <p class="search-page-card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus enim error illum ipsa, natus quas quia quis. Aliquid animi, dolorem ea eius esse expedita facere ipsa officia
+                        repellat sunt unde...</p>
+
+                    <p class="search-page-card__short-details-key">Date</p>
+                    <p class="search-page-card__short-details-value">February 21, 2017</p>
+                    <p class="search-page-card__short-details-key">Inclusions</p>
+                    <p class="search-page-card__short-details-value">
+                        <img src="../i/inclusions/beds.svg" class="search-page-card__short-details-icon" alt="">
+                        <img src="../i/inclusions/flights.svg" class="search-page-card__short-details-icon" alt="">
+                        <img src="../i/inclusions/wifi.svg" class="search-page-card__short-details-icon" alt="">
+                        <img src="../i/inclusions/kids-club.svg" class="search-page-card__short-details-icon" alt="">
+                    </p>
+
+                </div>
+
+                <div class="search-page-card__cost-side">
+
+                    <p class="search-page-card__short-details-for-cost mobile-only">
+                        <img class="search-page-card__short-details-for-cost-icon" src="../i/inclusions/kids-club.svg" alt="">
+                        <span class="search-page-card__short-details-for-cost-text">2</span>
+                        <img class="search-page-card__short-details-for-cost-icon search-page-card__short-details-for-cost-icon--nights" src="../i/inclusions/nights.svg" alt="">
+                        <span class="search-page-card__short-details-for-cost-text">7</span>
+                    </p>
+
+                    <p class="search-page-card__cost-from desktop-only">from</p>
+                    <p class="search-page-card__cost-value"><span class="search-page-card__cost-currency">$</span>200</p>
+                    <p class="search-page-card__cost-value-per-person mobile-only"><span class="search-page-card__cost-per-person-currency">$</span>200</p>
+                    <p class="search-page-card__cost-per-person">per person</p>
+
+                    <a class="search-page-card__cost-details" href="#">details</a>
+
+                    <span class="search-page-card__to-bucket-list js-search-page-card__to-bucket-list">Bucket List</span>
+
+                </div>
+
+
+            </div>
+
+            {{ }; }}
+
+        </div>
+
+    </div>
+
+    <div class="width-limiter pagination">
+        <a class="pagination__link-left" href="#"></a>
+        <a class="pagination__link" href="#">1</a>
+        <a class="pagination__link" href="#">2</a>
+        <a class="pagination__link" href="#">3</a>
+        <a class="pagination__link-right" href="#"></a>
+    </div>
+
+</div>
+
+
+{{= it.chunks['footer.html'] }}
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+.follow-the-journey {
+    padding: 72px 0 0;
+    margin-bottom: -103px;
+    z-index: 1;
+    position: relative;
+}
+
+.follow-the-journey-item__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.follow-the-journey__image-list {
+    font-size: 0;
+    line-height: 0;
+}
+
+.follow-the-journey__header {
+    font-size: 26px;
+    text-align: center;
+    color: $orange;
+    margin: 0;
+    padding-bottom: 28px;
+    font-family: Larsseit-Bold, sans-serif;
+    letter-spacing: 1px;
+}
+
+.follow-the-journey-item {
+    float: left;
+    width: 170px;
+    height: 170px;
+    margin: 15px;
+    background-image: url(../i/follow-the-journey-item-bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    &:hover {
+        text-decoration: none;
+        .follow-the-journey-item__image {
+            max-width: 146px;
+            max-height: 146px;
+            margin-left: 12px;
+            margin-top: 12px;
+        }
+    }
+
+}
+
+.follow-the-journey-item--type-1 {
+    @include prefix-property(background-image, linear-gradient(top, $orange 0, $orange 85px, #ffffff 85px));
+}
+
+.follow-the-journey-item__image--type-1 {
+    margin-left: 12px;
+    margin-top: 12px;
+    width: 146px;
+    height: 114px;
+}
+
+.follow-the-journey-item__paragraph {
+    font-size: 20px;
+    line-height: 1.15;
+    margin: 0;
+    padding: 11px 14px 0;
+    font-family: Bagnard, serif;
+}
+
+.follow-the-journey-item__paragraph--type-1 {
+    color: $orange;
+}
+
+@media only screen and (max-width: $desktopWideWidth) {
+
+    .follow-the-journey {
+        padding-top: 24px;
+    }
+
+    .follow-the-journey__image-list {
+        padding-left: 15px;
+    }
+
+    .follow-the-journey-item {
+        width: 165px;
+        height: 165px;
+        margin-top: 0;
+        margin-left: 0;
+        &:hover {
+            .follow-the-journey-item__image {
+                max-width: 141px;
+                max-height: 141px;
+            }
+            .follow-the-journey-item__image--type-1 {
+                margin-left: 10px;
+                margin-top: 10px;
+                max-width: 145px;
+                max-height: 114px;
+            }
+        }
+    }
+
+    .follow-the-journey-item__image--type-1 {
+        margin-left: 10px;
+        margin-top: 10px;
+        width: 145px;
+
+    }
+
+    .follow-the-journey__header {
+        font-size: 17px;
+        padding: 0 15px 24px;
+    }
+}
+
+@media only screen and (max-width: $tabletWidth) {
+
+}
+
+@media only screen and (max-width: $phoneWidth) {
+
+}

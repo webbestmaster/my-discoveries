@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Log in</title>
+
+    {{ var dot = it.dot, chunks = it.chunks; }}
+    {{= dot.template(chunks['head.html'])({}) }}
+
+</head>
+<body>
+    <!-- BEGIN - header -->
+    {{= it.chunks['header.html'] }}
+    <!-- END - header -->
+
+    <!-- BEGIN - sing in -->
+
+    <div id="singIn" class="modal fade in" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-dialog--margin-top" role="document">
+            <div class="modal-content modal-content--container">
+                <div class="modal-content__header text-center">
+                    <img src="../i/logo-short.svg" class="modal-content__logo-short" alt="logo-short">
+                    <p class="modal-content__sing">sign in</p>
+                </div>
+                <div class="modal-content__body">
+                    <form class="modal-content__form">
+                        <label for="inputEmail" class="modal-content__title control-label">Email address</label>
+                        <input type="email" class="modal-content__input form-control" id="inputEmail">
+                        <label for="inputPassword" class="modal-content__title control-label">Password</label>
+                        <input type="password" class="modal-content__input form-control" id="inputPassword">
+                    </form>
+                    <div class="modal-content__btn text-center">
+                        <a href="#" class="modal-content__btn-access">access my account</a>
+                        <p class="modal-content__text-divider">or</p>
+                        <a href="#" class="modal-content__btn-facebook">facebook</a>
+                    </div>
+                </div>
+                <div class="modal-content__footer text-center">
+                    <p class="modal-content__footer-text modal-content__footer-text--up"><a href="#" class="modal-content__footer-link">Sign in</a> to reveal exclusive deals and book faster!</p>
+                    <p class="modal-content__footer-text">By creating an account, you're agreeing with our <br><a href="#" class="modal-content__footer-terms">Terms and Conditions</a> and <a href="#" class="modal-content__footer-terms">Privacy Statement</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END - sing in -->
+
+</body>
+</html>

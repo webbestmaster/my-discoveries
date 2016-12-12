@@ -1,0 +1,50 @@
+/* call-to-action-top */
+
+.call-to-action-top {
+    background-color: $lightGray;
+    padding: 49px 0 42px;
+}
+
+.call-to-action-top__text {
+    font-family: Bagnard, serif;
+    font-size: 34px;
+    margin: 0;
+
+    color: $orange;
+}
+
+.call-to-action-top__btn {
+    display: inline-block;
+    font-family: Larsseit-Bold, serif;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #fff;
+    background-color: $orange;
+    border: 2px solid transparent;
+
+    margin-top: 17px;
+    padding: 13px 27px 8px;
+
+    &:hover {
+        color: $orange;
+        background-color: #fff;
+        border: 2px solid $orange;
+    }
+}
+
+@media only screen and (max-width: $desktopWideWidth) {
+
+}
+
+@media only screen and (max-width: $tabletWidth) {
+
+    .call-to-action-top__text {
+        font-size: 21px;
+    }
+}
+
+@media only screen and (max-width: $phoneWidth) {
+
+}

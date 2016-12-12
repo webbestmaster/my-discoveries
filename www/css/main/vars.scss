@@ -1,0 +1,40 @@
+$desktopWideWidth: 1200px;
+$desktopWidth: 1170px;
+$tabletWidth: 768px;
+$phoneWidth: 640px;
+
+$orange: #ff4d1a;
+$blue: #000060;
+$turquoise: #bbe0e6;
+$lightGray: #f4efed;
+$darkGray: #979695;
+$textColor: #3d3a38;
+$markTextColor: #ffa600;
+$menuBackgroundColor: #f4efec;
+
+$popupBackgroundColor: rgba(0, 0, 0, 0.5);
+
+@mixin prefix($property, $value) {
+  @each $prefix in ('-webkit-', '-moz-', '-ms-', '-o-', '') {
+    #{$prefix + $property}: $value;
+  }
+}
+
+@mixin prefix-property($property, $value) {
+  @each $prefix in ('-webkit-', '-moz-', '-ms-', '-o-', '') {
+    #{$property}: #{$prefix + $value};
+  }
+}
+
+/* just for example, do not fill */
+@media only screen and (max-width: $desktopWideWidth) {
+
+}
+
+@media only screen and (max-width: $tabletWidth) {
+
+}
+
+@media only screen and (max-width: $phoneWidth) {
+
+}
